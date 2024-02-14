@@ -1,0 +1,21 @@
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.lg-react-element {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  padding: 5px 0px;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+img:hover {
+  filter: opacity(.9);
+  transform: scale(1.01);
+}
