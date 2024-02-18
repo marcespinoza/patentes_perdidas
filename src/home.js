@@ -7,7 +7,7 @@ import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { collection } from 'firebase/firestore'
 import { v4 } from "uuid";
 import { addDoc, getDoc, getDocs } from '@firebase/firestore';
-import { Card, Button, Container, Row, Table, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Table, Col, InputGroup, Form } from 'react-bootstrap';
 
 const data = [
   { image: 'user1', value: 'John' },
@@ -35,9 +35,20 @@ const Home = () => {
  return (
     <div>        
       <Container >
-        <div style={{marginTop:'3%', display: 'flex', justifyContent: 'flex-end'}}>
-         <Button variant="outline-info" >Cargar imagen</Button>{' '}
+        <div>
+        <div class="row" style={{ maxWidth: "100%" }}>
+            <div class="input-group w-50">
+                <input class="form-control border-end-0 border rounded-pill mx-auto" type="search" value="Número de patente" id="example-search-input"/>
+                <span class="input-group-append">
+                    <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+            <Button variant="outline-info mx-auto w-50" >Cargar imagen</Button>{' '}
         </div>
+        </div>
+          
                 <Row xs={3} md={3} className="g-2" style={{marginTop:'3%'}}>    
                 {data.map((image, idx) => {
                     return (
