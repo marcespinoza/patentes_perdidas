@@ -37,7 +37,8 @@ const Home = () => {
       <Container >
         <div>
         <div class="row" style={{ maxWidth: "100%" }}>
-            <div class="input-group w-50">
+        <div class="d-flex flex-column">
+            <div class="input-group mx-auto w-50">
                 <input class="form-control border-end-0 border rounded-pill mx-auto" type="search" value="Número de patente" id="example-search-input"/>
                 <span class="input-group-append">
                     <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
@@ -46,6 +47,8 @@ const Home = () => {
                 </span>
             </div>
             <Button variant="outline-info mx-auto w-50" >Cargar imagen</Button>{' '}
+        </div>
+        
         </div>
         </div>
           
