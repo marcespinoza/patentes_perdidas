@@ -20,6 +20,11 @@ import lgRotate from 'lightgallery/plugins/rotate';
 import { Card, Button, Container, Row, Table, Col } from 'react-bootstrap';
 
 export function ImageGrid(props) {
+    const myObject = [
+        { txtVal:'Russia', imgUrl:'src/images/patente2.jpg' },
+        { txtVal:'Japan', imgUrl:'src/images/patente2.jpg' }
+    ];
+
     const onInit = () => {
         console.log('lightGallery has been initialized');
     };
@@ -27,7 +32,7 @@ export function ImageGrid(props) {
         <div >
             <Container >
                 <Row xs={3} md={3} className="g-2">    
-                {props.images.map((image, idx) => {
+                {myObject.map((image, idx) => {
                     return (
                         <Col key={idx} xs={6} md={4} lg={3}>
 

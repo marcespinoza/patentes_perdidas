@@ -50,7 +50,7 @@ export function ImageUploader() {
       }
     
       useEffect(()=>{
-        getData()
+        //getData()
       })
     
       const handleSubmit = () => {
